@@ -41,8 +41,29 @@ header .titlebar a,header .titlebar h1{
 #new-box{
 
 }
+#new-box .list-tit{
+    background: #fff;
+    width: 98%;
+    padding: 0 1%;
+    height: 34px;
+    line-height: 34px;
+    font-weight: normal;
+    border-bottom: 1px solid #ddd;
+    margin-top: 8px;
+}
+#new-box .list-tit .icon-tit{
+    background: url(../img/list/icon-tit.png) center center no-repeat;
+    background-size: 90%;
+}
+#new-box .list-tit a{
+    font-size: 14px;
+    padding-right: 4px;
+    color: #02cfff;
+}
 .new-list{
     position: relative;
+    padding: 0 4px;
+    background: #fff;
 }
 .new-list a{
     position: absolute;
@@ -56,10 +77,11 @@ header .titlebar a,header .titlebar h1{
     float: left;
     font-size: 14px;
     padding-left: 2%;
+    margin-top: 4px;
 }
 .new-list>.img{
     padding: 8px 0;
-    float: left;
+    float: right;
     margin: 0  1% 0 1%;
 }
 .new-list>.img img{
@@ -67,18 +89,25 @@ header .titlebar a,header .titlebar h1{
 }
 .news-bottom{
     float: left;
-    width: 98%;
+    width: 70%;
     padding-left: 2%;
     font-size: 12px;
     color: #909090;
 }
 .news-bottom span{
- font-size: 12px;
- padding: 0 8px 6px 0;
+    font-size: 12px;
+    padding: 0 8px 6px 0;
 }
 .news-bottom i{
- font-size: 16px;
- padding-right: 2px;
+    font-size: 16px;
+    margin-right: 2px;
+}
+.news-bottom .comment{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: url(../img/video/comment.png) no-repeat top center;
+    background-size: 100%;
 }
 .news-bottom>.lable{
     border-radius: 5px;
@@ -123,7 +152,7 @@ footer .menubar .icon-users{
     background-size: 94%;
 }
 
-/*视频页面*/
+/*套餐页面*/
 .video-title{
     border-top: #dddddd solid 1px;
     border-bottom: #dddddd solid 1px;
@@ -170,23 +199,25 @@ footer .menubar .icon-users{
     background: url(../img/video/head02.png) no-repeat top center;
     background-size: 100%;
 }
-.video-list{
-    margin-top: 8px;
+.pack-list{
     width: 98%;
-    padding: 0 1%;
+    padding: 8px 1%;
+    background: #fff;
 }
-.video-list li{
+.pack-list li{
     float: left;
-    width: 48%;
+    width: 47%;
     margin-right: 1%;
     margin-left: 1%;
     margin-bottom: 6px;
+    border: 1px solid #ddd;
 }
-.video-list li>.text{
-    background-color: #04C191;
-    color: #fff;
+.pack-list li>.text{
+    background-color: #fff;
+    color: #000;
+    text-align: center;
 }
-.video-list li>.text h3{
+.pack-list li>.text h3{
     padding: 2px  4px;
     font-size: 16px;
     font-weight: 100;
@@ -195,13 +226,22 @@ footer .menubar .icon-users{
        text-overflow: ellipsis;
     white-space: nowrap;
 }
-.video-list li>.text p{
+.pack-list li>.text p{
     font-size: 14px;
     padding: 2px  4px;
     overflow: hidden;
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis;
     white-space: nowrap;
+}
+.pack-list li>.text a.btn-buy{
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+    background: #e51025;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin: 4px auto;
 }
 
 /*视频详情页面*/
