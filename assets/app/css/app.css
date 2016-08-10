@@ -37,6 +37,17 @@ header .titlebar a,header .titlebar h1{
     top: 48px;
     width: 100%;
 }
+.bottom{
+    width: 100%;
+    background: #fff;
+    margin-top: 8px;
+}
+.bottom a.btn{
+    display: inline-block;
+    width: 48%;
+    margin: 4px 1%;
+}
+
 /*文章列表*/
 #new-box{
 
