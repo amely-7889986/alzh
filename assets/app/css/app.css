@@ -13,7 +13,7 @@ header .titlebar{
     border-bottom: 1px solid #ddd;
 }
 header .titlebar a,header .titlebar h1{
-    color: #fff;
+    color: #02cfff;
 }
 .slidebar .tab:active, .slidebar .tab.active{
     border-color: #fff;
@@ -44,8 +44,37 @@ header .titlebar a,header .titlebar h1{
 }
 .bottom a.btn{
     display: inline-block;
-    width: 48%;
+    width: 46%;
+    height: 28px;
+    line-height: 28px;
     margin: 4px 1%;
+    background: url(../img/list/btn-bg.png) left center repeat-x;
+    background-size: auto 28px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.bottom a.btn i{
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    margin-top: -3px;
+}
+.bottom a.btn .icon-sent{
+    background: url(../img/list/icon-sent.png) center center no-repeat;
+    background-size: 100%;
+}
+.bottom a.btn .icon-wshare{
+    background: url(../img/list/icon-wshare.png) center center no-repeat;
+    background-size: 100%;
+}
+.bottom .code{
+    width: 40%;
+    margin: auto 30%;
+    text-align: center;
+}
+.bottom .code img{
+    width: 100%;
 }
 
 /*文章列表*/
