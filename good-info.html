@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+        <title>ALZH微商城</title>
+        <link rel="stylesheet" href="assets/agile/css/agile.layout.css">
+        <link rel="stylesheet" href="assets/third/seedsui/plugin/seedsui/seedsui.min.css">
+        <link rel="stylesheet" href="assets/app/css/app.css">
+    </head>
+    <body>
+        <div id="section_container">
+		    <section id="slider_section" data-role="section" class="active">
+			    <header>
+			    	<div class="titlebar">
+				    	<a class="left" data-toggle="back" >
+                            <i class="icon icon-arrowleft"></i>
+                        </a>
+                        <h1 class="text-center">产品详情</h1>
+                    </div>
+                    <div id="tabbarOuter" data-scroll="horizontal">
+				    	<div class="scroller" style="width:100%;">
+				            <ul class="slidebar">
+				                <li class="tab active" data-role="tab" href="#page1" data-toggle="page">
+				                    <label class="tab-label">商品信息</label>
+				                </li>
+				                <li class="tab" data-role="tab" href="#page2" data-toggle="page">
+				                    <label class="tab-label">购买记录</label>
+				                </li>
+				                <li class="tab" data-role="tab" href="#page3" data-toggle="page">
+				                    <label class="tab-label">顾客评论</label>
+				                </li>
+				                <li class="tab" data-role="tab" href="#page4" data-toggle="page">
+				                    <label class="tab-label">买家问答</label>
+				                </li>
+				            </ul>
+						</div>
+					</div>
+			    </header>
+			    <article  data-role="article" id="slider_article" class="active" style="top:44px;background:#e9edef;">
+                <div id="sliderPage" data-role="slider" class="full">
+                    <div class="scroller">
+	                    <div id="page1" class="slide" data-role="page" data-scroll="pulldown">
+		                    <div class="scroller">
+                            <div id="slide" data-role="slider" class="full" style="overflow: hidden; height:auto;">
+                                <div class="scroller">
+                                    <div class="slide">
+                                        <img data-source="update/good-img01.jpg" width="80%;" />
+                                    </div>
+                                    <div class="slide">
+                                        <img data-source="update/good-img02.jpg" width="80%;"/>
+                                    </div>
+                                    <div class="slide">
+                                        <img data-source="update/good-img03.jpg" width="80%;"/>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+	                    </div>
+	                    <div id="page2" class="slide" data-role="page" data-scroll="verticle">
+		                    
+	                    </div>
+	                    <div id="page3" class="slide" data-role="page" data-scroll="verticle">
+		                    
+	                    </div>
+	                    <div id="page4" class="slide" data-role="page" data-scroll="verticle">
+		                    
+	                    </div>
+                    </div>
+                </div>
+                </article>
+			</section>
+		</div>
+
+		<!--- third -->
+        <script src="assets/third/jquery/jquery-2.1.3.min.js"></script>
+        <script src="assets/third/jquery/jquery.mobile.custom.min.js"></script>
+        <script src="assets/third/iscroll/iscroll-probe.js"></script>
+        <!---  agile -->
+        <script type="text/javascript" src="assets/agile/js/agile.js"></script>
+        <!-- app -->
+        <script type="text/javascript" src="assets/app/js/app.seedsui.js"></script>
+        <script type="text/javascript" src="assets/third/seedsui/plugin/seedsui/seedsui.min.js"></script>
+
+        <script>
+
+        $('#slider_section').on('sectionshow', function(){
+			A.Component.scroll('#tabbarOuter');
+		});
+        $('#slider_article').on('articleload', function(){
+            A.Slider('#slide', {
+                dots : 'right'
+            });
+            A.Slider('#sliderPage', {
+                dots : 'hide'
+            });
+        });
+        $('#slide img').on(A.options.clickEvent, function(){
+            //var $el = $(this);
+            //A.showToast($el.siblings('.slider_label').html());
+            A.Component.pictureShow({
+                id : 'picture',
+                index : $("#slide .slide").index($("#slide .slide.active")),
+                title : '这是默认标题',
+                list : [
+                    {
+                        imgURL : 'update/new-img-lg01.png',
+                    },
+                    {
+                        imgURL : 'update/new-img-lg01.png',
+                    },
+                    {
+                        imgURL : 'update/new-img-lg01.png',
+                    }
+                ]
+            });
+        });
+        </script>
+	</body>
+</html>

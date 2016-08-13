@@ -1,5 +1,5 @@
 /*首页*/
-.rectbar .tab, .slidebar .tab, .tabbar .tab{
+.rectbar .tab, .tabbar .tab{
     background:#fff;
 }
 .rectbar, .slidebar, .tabbar{
@@ -15,8 +15,16 @@ header .titlebar{
 header .titlebar a,header .titlebar h1{
     color: #02cfff;
 }
+.slidebar{
+    width: 100%;
+}
+.slidebar .tab{
+    width: 25%;
+    background: #02cfff;
+    border: none;
+}
 .slidebar .tab:active, .slidebar .tab.active{
-    border-color: #fff;
+    background: #1882d8;
 }
 .meun-rome{
     position: absolute;
@@ -312,6 +320,24 @@ footer .menubar .icon-users{
     width: 80%;
     padding: 4px 10%;
 }
+
+/*活动详情页面*/
+.active-post{
+    display: block;
+    padding: 4px;
+    background: #fff;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+.active-post .img{
+    display: block;
+    float: left;
+    width: 46%;
+    margin: 0 2%;
+}
+.active-post .img>img{
+    width: 100%;
+}
 .activeinfo{
     display: block;
     background: #fff;
@@ -333,24 +359,37 @@ footer .menubar .icon-users{
 .activeinfo .img>img{
     width: 100%;
 }
-
-
-/*活动详情页面*/
-.active-post{
-    display: block;
-    padding: 4px;
-    background: #fff;
-    overflow: hidden;
-    border-bottom: 1px solid #ddd;
+.photo{
+    border: 2px solid #faa82d;
 }
-.active-post .img{
-    display: block;
-    float: left;
-    width: 46%;
-    margin: 0 2%;
+#richeditor .sent{
+    background: #02cfff;
+    color: #fff;
+    border: none;
 }
-.active-post .img>img{
+
+/*产品详情页面*/
+.menu-box{
     width: 100%;
+    background-color: #fff;
+}
+.menu-box li{
+    float: left;
+    width: 25%;
+    height: 44px;
+}
+.menu-box li span{
+    width: 100%;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    display: inline-block;
+    color: #666666;
+    border-bottom: #ddd solid 1px;
+}
+.menu-box li.active span{
+    color: #4ea9de;
+    border-bottom: #4ea9de solid 1px;
 }
 
 /*视频详情页面*/
