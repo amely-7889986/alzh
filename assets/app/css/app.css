@@ -641,14 +641,14 @@ a {
 }
 /*修改表单*/
 button.submit, input[type="submit"], .button.submit {
-    background-color: #04C191;
+    background-color: #02cfff;
 }
 input[type="checkbox"]:checked, input[type="radio"]:checked, .checkbox.active, .radio.active {
-    color: #04C191;
+    color: #1882d8;
 }
 /*修改弹窗*/
 .agile-popup{
-    background: #04C191 !important;
+    background: #02cfff !important;
     color: #fff;
 }
 .agile-popup-handler > a{
