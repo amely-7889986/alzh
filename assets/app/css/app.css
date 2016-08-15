@@ -123,6 +123,12 @@ header .titlebar a,header .titlebar h1{
     height: 100%;
     z-index: 999;
 }
+.new-list>.num{
+    font-size: 14px;
+    padding-left: 2%;
+    margin-top: 2px;
+    color: #02cfff;
+}
 .new-list>.title{
     float: left;
     font-size: 14px;
