@@ -110,6 +110,12 @@ header .titlebar a,header .titlebar h1{
     padding-right: 4px;
     color: #02cfff;
 }
+.list-banner{
+    width: 100%;
+}
+.list-banner>img{
+    width: 100%;
+}
 .new-list{
     position: relative;
     padding: 0 4px;
@@ -262,7 +268,7 @@ footer .menubar .icon-users{
 }
 .pack-list li{
     float: left;
-    width: 47%;
+    width: 98%;
     margin: 4px 1%;
     border: 1px solid #ddd;
 }
