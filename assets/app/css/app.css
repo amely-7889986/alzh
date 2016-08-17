@@ -275,7 +275,7 @@ footer .menubar .icon-users{
 .pack-list li>.text{
     background-color: #fff;
     color: #000;
-    text-align: center;
+    padding-left: 8px;
 }
 .pack-list li>.text h3{
     padding: 2px  4px;
@@ -293,6 +293,7 @@ footer .menubar .icon-users{
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis;
     white-space: nowrap;
+    float: left;
 }
 .pack-list li>.text a.btn-buy{
     display: inline-block;
@@ -301,7 +302,8 @@ footer .menubar .icon-users{
     background: #e51025;
     padding: 2px 8px;
     border-radius: 12px;
-    margin: 4px auto;
+    margin-right: 8px;
+    float: right;
 }
 #packinfo {
 }
