@@ -24,19 +24,6 @@
                     <div class="scroller">
                         <div id="page1" class="slide" data-role="page" data-scroll="pullup">
                             <div class="scroller">
-                            <div id="slide" data-role="slider" class="full" style="overflow: hidden; height:auto;">
-                                <div class="scroller">
-                                    <div class="slide">
-                                        <img data-source="update/new-img-lg01.png" class="full-width"/>
-                                    </div>
-                                    <div class="slide">
-                                        <img data-source="update/new-img-lg01.png" class="full-width"/>
-                                    </div>
-                                    <div class="slide">
-                                        <img data-source="update/new-img-lg01.png" class="full-width"/>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="active-post">
                                 <a class="img"><img data-source="update/activity-img01.jpg" alt=""></a>
                                 <a class="img"><img data-source="update/activity-img02.jpg" alt=""></a>
@@ -56,6 +43,12 @@
                                             <li>
                                                 <div class="justify-content">
                                                     <a style="color:#000">托尼屎大颗</a>
+                                                    <a class="top right lrmargin8">
+                                                        <small>
+                                                            <i class="zan"></i>
+                                                            <span>116</span>
+                                                        </small>
+                                                    </a>
                                                     <p style="margin-top:8px;font-size:14px;color:#727171;">你可能不懂 强迫症看到这种发型的时候有多崩溃<i data-emoji="[weixiao]" alt="[微笑]"></i></p>
                                                     <small class="nowrap" href="comment-list.html" data-toggle="html">2016-7-14 11:35   51条回复 ></small>
                                                 </div>
@@ -66,6 +59,12 @@
                                             <li>
                                                 <div class="justify-content">
                                                     <a style="color:#000">千绘菌</a>
+                                                    <a class="top right lrmargin8">
+                                                        <small>
+                                                            <i class="zan"></i>
+                                                            <span>116</span>
+                                                        </small>
+                                                    </a>
                                                     <p style="margin-top:8px;font-size:14px;color:#727171;">我的意思是熊猫从UI又瘦成VI了，龙哥是一直很瘦很瘦的<i data-emoji="[wabikong]" alt="[挖鼻孔]"></i></p>
                                                     <small class="nowrap" href="comment-list.html" data-toggle="html">2016-7-14 11:35:40   51条回复 ></small>
                                                 </div>
@@ -74,6 +73,14 @@
                                                 </div>
                                             </li>
                                         </ul>
+                                </div>
+                            </div>
+                            <!-- 底部按钮 -->
+                            <div class="bottom">
+                                <a href="" class="btn"><i class="icon-sent"></i>发送给朋友</a>
+                                <a href="" class="btn"><i class="icon-wshare"></i>分享至朋友圈</a>
+                                <div class="code">
+                                    <img data-source="update/erweima.png" alt="">
                                 </div>
                             </div>
 
@@ -220,31 +227,8 @@
         <script>
 
         $('#slider_article').on('articleload', function(){
-            A.Slider('#slide', {
-                dots : 'right'
-            });
             A.Slider('#sliderPage', {
                 dots : 'hide'
-            });
-        });
-        $('#slide img').on(A.options.clickEvent, function(){
-            //var $el = $(this);
-            //A.showToast($el.siblings('.slider_label').html());
-            A.Component.pictureShow({
-                id : 'picture',
-                index : $("#slide .slide").index($("#slide .slide.active")),
-                title : '这是默认标题',
-                list : [
-                    {
-                        imgURL : 'update/new-img-lg01.png',
-                    },
-                    {
-                        imgURL : 'update/new-img-lg01.png',
-                    },
-                    {
-                        imgURL : 'update/new-img-lg01.png',
-                    }
-                ]
             });
         });
         </script>
